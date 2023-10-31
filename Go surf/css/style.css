@@ -1,0 +1,1292 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,regular,500,600,700,800,900);
+
+body {
+    font-family: Fira Sans;
+    font-size: 16px;
+    color: #fff;
+    background-color: #171919;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    height: 100%;
+}
+
+.intro {
+    height: 100%;
+    background: url(../img/west-shore.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 1024px;
+    overflow: hidden;
+}
+
+.intro::before {
+    position: absolute;
+    content: '';
+    background: url(../img/go\ surf.png) center no-repeat;
+    top: 0px;
+    left: 0px;
+    width: 467px;
+    height: 322px;
+}
+
+@media (max-width: 320px) {
+    .intro::before {
+        width: 173px;
+        height: 116px;
+        background: url(../img/go\ surf-320.png) center no-repeat;
+    }
+}
+
+.header {
+    width: 168px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2515);
+    position: absolute;
+}
+
+.header.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 60px;
+    line-height: 86px;
+    font-weight: 800;
+    margin-top: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #4AF6CD;
+    width: 168px;
+    height: 191px;
+}
+
+.menu {
+    margin-top: 118px;
+}
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu__link i {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu__link.flex {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.menu__item {
+    margin-bottom: 37px;
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.date__day {
+    font-size: 72px;
+    line-height: 64px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.date__month {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    line-height: 19px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.fix {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.2515);
+    background-color: rgba(0, 0, 0, 0.323);
+    width: 168px;
+    z-index: 20;
+}
+
+.menu__fix {
+    margin-top: 20px;
+    flex: 1 1 auto;
+}
+
+/* Тест, удалить */
+
+.surf {
+    background-color: aqua;
+}
+
+@media (max-width: 768px) {
+    .menu__icon {
+        z-index: 5;
+        display: block;
+        position: fixed;
+        width: 18px;
+        height: 11px;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-left: 25px;
+        transform: translateX(10%);
+        transition: all 0.45s ease 0.1s;
+        z-index: 11;
+    }
+
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        right: 0;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menu__icon::before {
+        content: '';
+        top: 0;
+        width: 22px;
+    }
+
+    .menu__icon::after {
+        content: '';
+        bottom: -8px;
+        width: 22px;
+    }
+
+    .menu__icon._active::after {
+        display: none;
+    }
+
+    .menu__icon span {
+        bottom: 0;
+        width: 22px;
+    }
+
+    .menu__icon._active span {
+        bottom: calc(50% - 2px);
+        transform: rotate(-45deg);
+        width: 22px;
+    }
+
+    .menu__icon._active::before {
+        top: calc(50% - 1px);
+        transform: rotate(45deg);
+    }
+
+    .menu__icon._active {
+        transform: translateX(240px);
+        z-index: 11;
+    }
+
+    .header__fix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 100%;
+        transform: translateX(-100%);
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 30px 30px 30px;
+        transition: transform .4s linear, -webkit-transform .4s linear;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+
+    .header__fix._active {
+        transform: translateX(0%);
+        transition: transform .4s linear, -webkit-transform .4s linear;
+        z-index: 10;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header::before {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+
+    .header.flex {
+        align-items: flex-start;
+    }
+
+    .header {
+        border: none;
+    }
+}
+
+.slider {
+    height: 1024px;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    height: 100%;
+}
+
+.slide__img,
+.slider__arrow {
+    position: absolute;
+    right: 0px;
+}
+
+.slider__arrow {
+    top: 40px;
+    right: 80px;
+    gap: 20px;
+}
+
+.slider__arrow-prev,
+.slider__arrow-next {
+    cursor: pointer;
+    z-index: 5;
+}
+
+.slide__content {
+    position: absolute;
+    bottom: 116px;
+    right: 80px;
+}
+
+.subtitle {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33px;
+    font-weight: 400;
+    color: #979797;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.subtitle::before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 80px;
+    background-color: #979797;
+    margin-right: 25px;
+}
+
+.slide__title {
+    font-size: 80px;
+    line-height: 86px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    text-align: right;
+}
+
+.second-title {
+    text-align: right;
+    font-size: 40px;
+    color: #fff;
+    line-height: 86px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.slide__button {
+    text-align: right;
+}
+
+.slide__link img:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s ease;
+}
+
+.slider__pagination {
+    position: absolute;
+    bottom: 41px;
+    right: 80px;
+}
+
+.pagination__number {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34px;
+}
+
+.pagination__content {
+    align-items: center;
+    gap: 87px;
+}
+
+.pagination__item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.pagination__item.__active::before {
+    background-color: #4AF6CD;
+}
+
+.pagination__wrapper {
+    position: relative;
+    gap: 40px;
+    z-index: 5;
+}
+
+.pagination__title a {
+    color: #fff;
+}
+
+.pagination__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+
+}
+
+.pagination__number,
+.pagination__title {
+    cursor: pointer;
+}
+
+.swiper-button-disabled {
+    cursor: auto;
+    opacity: 0.1;
+}
+
+@media (max-width: 1024px) {
+    .slide__title {
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 18px
+    }
+
+    .slide__img {
+        text-align: right;
+    }
+
+    .slide__img img {
+        width: 85%;
+    }
+
+    .pagination__content {
+        gap: 17px;
+    }
+
+    .intro {
+        min-height: 840px;
+    }
+
+    .slider {
+        height: 840px;
+    }
+}
+
+@media (max-width:768px) {
+    .slider {
+        height: 740px;
+    }
+
+    .intro {
+        min-height: 740px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .slide__content,
+    .slider__pagination,
+    .slider__arrow {
+        right: 25px;
+    }
+
+    .intro {
+        min-height: 640px;
+    }
+
+    .slider {
+        height: 640px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide__title {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .second-title {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .pagination__title {
+        display: none;
+    }
+
+    .intro {
+        min-height: 480px;
+    }
+
+    .slider {
+        height: 480px;
+    }
+}
+
+.surf {
+    background-color: #171919;
+    position: relative;
+}
+
+.surf__wrapper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../ico/inscription-surf.svg) no-repeat left;
+    width: 467px;
+    height: 156px;
+    margin-top: 187px;
+}
+
+.h2 {
+    margin-top: 130px;
+    margin-left: 245px;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 156px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+.h2::before {
+    content: '';
+    position: relative;
+    width: 80px;
+    height: 1px;
+    display: block;
+    background-color: #4AF6CD;
+    top: 35px;
+}
+
+.surf__location {
+    padding-right: 73px;
+    position: relative;
+}
+
+.surf__wrapper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../img/POI.png) no-repeat right;
+    width: 294px;
+    height: 350px;
+    top: 219px;
+    right: 0px;
+}
+
+.surf__slider {
+    padding-left: 178px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.SurfSlider {
+    max-width: 400px;
+    align-items: flex-start;
+}
+
+.SurfSlider__item {
+    position: relative;
+    width: 400px !important;
+    margin-right: -40px;
+}
+
+.SurfSlider__item:nth-of-type(2n+1) {
+    margin-top: 32px;
+}
+
+.SurfSlider__item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% - 2px);
+    background-color: rgb(37, 37, 37, 0.75);
+
+    position: absolute;
+}
+
+.SurfSlider__img img {
+    width: 100%;
+}
+
+.SurfSlider__item:hover::before {
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.SurfSlider__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+    max-width: 140px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 72px;
+    z-index: 5;
+}
+
+.SurfSlider__location {
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 8px;
+    bottom: 80px;
+    margin-left: 40px;
+    z-index: 5;
+}
+
+.SurfSlider__button {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 27px;
+    margin-left: 40px;
+    display: none;
+    transition: all 0.8s ease;
+}
+
+.SurfSlider__button.__show {
+    display: block;
+    transition: all 0.8s ease;
+
+}
+
+.SurfSlider__button span {
+    background-color: rgba(74, 246, 205, 1);
+    padding: 17px 17px 19px 17px;
+}
+
+.SurfSlider__button span::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    background: url(../ico/Shape-r.svg) no-repeat center;
+    margin-left: 16px;
+    padding-bottom: 6px;
+}
+
+.surf__arrow {
+    cursor: pointer;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    margin-right: 80px;
+    gap: 20px;
+}
+
+.surf__arrow-prev,
+.surf__arrow-next {
+    opacity: 0.1;
+}
+
+.surf__arrow-prev:hover,
+.surf__arrow-next:hover {
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-disabled {
+    opacity: 0.1;
+}
+
+.swiper-button-disabled:hover {
+    opacity: 0.1;
+}
+
+@media (max-width:1024px) {
+    .SurfSlider__item {
+        width: 300px !important;
+    }
+
+    .SurfSlider__title {
+        margin-top: 22px;
+    }
+
+    .SurfSlider__location {
+        bottom: 50;
+    }
+
+    .SurfSlider__button {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .surf__slider {
+        padding-left: 15px
+    }
+
+    .SurfSlider__button {
+        margin-left: 25px;
+    }
+
+    .surf__arrow {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .h2 {
+        padding-top: 30px;
+        margin-left: 45px;
+        font-size: 40px
+    }
+
+    .surf__wrapper::before,
+    .surf__wrapper::after {
+        display: none;
+    }
+
+    .surf__location {
+        margin-bottom: 55px;
+    }
+}
+
+.travel__wrapper {
+    position: relative;
+}
+
+.travel__wrapper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/Travel.png) no-repeat left;
+    width: 100%;
+    height: 156px;
+    margin-top: 187px;
+}
+
+.slider2__slide {
+    overflow: hidden;
+}
+
+.slider2__slide-img {
+    position: relative;
+}
+
+.slider2__slide-img img {
+    width: 80%;
+}
+
+.travel .slider2__slide-img::after {
+    content: '';
+    background: url(../img/airplane.png) no-repeat right bottom;
+    background-size: 100%;
+    display: inline-block;
+    width: 50%;
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    bottom: -80px;
+}
+
+.slider2__slide-wraper {
+    position: relative;
+    margin-top: 50px;
+}
+
+.slider2__slide-location {
+    position: absolute;
+    top: 92px;
+    right: 77px;
+}
+
+.slider2__slide-airline {
+    margin-bottom: 77px;
+    margin-top: -110px;
+}
+
+.slider2__slide-airline .subtitle {
+    justify-content: flex-start;
+    margin-left: 185px;
+    text-transform: uppercase;
+}
+
+.slider2__slide-airline .second-title {
+    text-align: left;
+    margin-left: 185px;
+    margin-top: -25px
+}
+
+.slider2__slide-airline .subtitle::before {
+    display: none;
+}
+
+.slider2__slide-airline .subtitle::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 80px;
+    background-color: #979797;
+    margin-left: 25px;
+}
+
+.slider2__slide-airline .second-title img {
+    padding-left: 20px;
+    margin-bottom: -8px;
+}
+
+.slider2__slide-description {
+    margin-left: 168px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.description__item {
+    flex: 1 1 21%;
+    align-items: flex-start;
+}
+
+.description__title {
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    font-weight: 400;
+    color: #515252;
+}
+
+.description__data {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-left: 18px;
+    position: relative;
+}
+
+.description__data span {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 5.25px;
+    color: #C4C5C5;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+}
+
+.button__wrapper {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    position: relative;
+    display: inline;
+}
+
+.button__wrapper span {
+    background-color: #4AF6CD;
+    padding: 17px;
+    margin-left: 19px;
+    position: relative;
+}
+
+.button__wrapper span::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    background: url(../ico/Shape-r.svg) no-repeat center;
+    margin-left: 16px;
+    padding-bottom: 6px;
+}
+
+.slider2__button {
+    text-align: center;
+}
+
+.button__wrapper span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 13px;
+    position: absolute;
+    top: 39px;
+    left: -17px;
+    margin: 0px 8px;
+}
+
+.button__wrapper a:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease;
+}
+
+.slider2__items {
+    position: relative;
+}
+
+.slider2 {
+    overflow: hidden;
+}
+
+.slider2::after {
+    content: '';
+    position: absolute;
+    background: url(../img/cocktail.png) no-repeat bottom right;
+    width: 564px;
+    height: 564px;
+    right: 0px;
+    bottom: -300px;
+}
+
+.slider2__arrows {
+    position: absolute;
+    right: 0px;
+    top: 560px;
+    z-index: 10;
+}
+
+.sleep__wrapper {
+    position: relative;
+}
+
+.sleep__wrapper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/Sleep.png) no-repeat left;
+    width: 100%;
+    height: 156px;
+    margin-top: 187px;
+}
+
+.sleep .sleep__slider::after {
+    content: '';
+    background: url(../img/Hammock.png) no-repeat right bottom;
+    background-size: 100%;
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    bottom: 380px;
+}
+
+.sleep .sleep__slider::before {
+    content: '';
+    background: url(../img/Frangipani\ Copy.png) no-repeat right bottom;
+    background-size: 100%;
+    display: inline-block;
+    width: 146px;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    bottom: 280px;
+    z-index: 5;
+}
+
+.sleep__wrapper::after {
+    content: '';
+    background: url(../img/Frangipani.png) no-repeat right bottom;
+    display: inline-block;
+    width: 190px;
+    height: 264px;
+    position: absolute;
+    right: 0px;
+    bottom: -80px;
+}
+
+.menu__item:hover {
+    background-color: #4AF6CD;
+    transition: all 0.6s ease;
+}
+
+.minus {
+    background-color: #4AF6CD;
+    width: 14px;
+    height: 2.745px;
+}
+
+.description__data-quantity {
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.pluse {
+    background: url(../ico/Plus.svg) no-repeat center;
+    height: 14px;
+    width: 14px;
+}
+
+.minus,
+.pluse {
+    border: none;
+    cursor: pointer;
+}
+
+.nights {
+    display: inline-block;
+    min-width: 45px;
+    text-align: right;
+}
+
+.shop {
+    margin-bottom: 284px;
+}
+
+.shop__wrapper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/Shop.png) no-repeat left;
+    width: 100%;
+    height: 156px;
+    margin-top: 187px;
+}
+
+.shop__slider-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 1 40%;
+    margin-top: 166px;
+}
+
+.shop__slider {
+    background: url(../img/Shop\ Image.png) no-repeat center right;
+    overflow: hidden;
+}
+
+.shop__slider {
+    margin-left: 185px;
+    position: relative;
+}
+
+.shop__slider .subtitle::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 80px;
+    background-color: #979797;
+    margin-left: 25px;
+}
+
+.shop__slider .subtitle::before {
+    display: none;
+}
+
+.shop__slider .second-title {
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 47px;
+}
+
+.shop__slider-price {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 81px;
+}
+
+.shop__slider-image {
+    justify-content: space-between;
+    flex: 0 1 60%;
+    padding-right: 67px;
+}
+
+.extras {
+    align-self: flex-end;
+}
+
+.extras__title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.extras__items {
+    gap: 57px;
+}
+
+.extras__item {
+    text-align: center;
+}
+
+.extras__item-img {
+    height: 105px;
+    margin-bottom: 36px;
+}
+
+
+.extras__item-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 8px;
+    color: #8B8C8C;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.extras__item-price {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 40px;
+
+}
+
+.shop__arrow.slider2__arrows {
+    top: 0px;
+}
+
+.shop__arrow {
+    cursor: pointer;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    margin-right: 80px;
+    gap: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .button {}
+
+.footer__copy {
+    margin-top: 44px;
+    padding-bottom: 34px;
+    color: #8B8C8C;
+    font-size: 12px;
+    letter-spacing: 1.05px;
+    line-height: 14px;
+    font-weight: 300;
+}
+
+@media (max-width:1024px) {
+    .travel .slider2__slide-img::after {
+        width: 40%;
+        bottom: 0px;
+    }
+
+    .description__title {
+        font-size: 16px;
+    }
+
+    .description__data {
+        font-size: 28px;
+    }
+
+    .shop__slider .second-title {
+        font-size: 32px;
+    }
+
+    .shop__slider-img img {
+        width: 188px;
+    }
+
+    .shop__slider-image {
+        padding-right: 15px;
+    }
+
+    .extras__items {
+        gap: 15px;
+    }
+
+    .sleep .sleep__slider::after {
+        width: 350px;
+    }
+
+    .sleep .sleep__slider::before {
+        width: 116px;
+    }
+
+    .shop {
+        margin-bottom: 154px;
+    }
+
+    .footer .button {
+        margin-left: 168px;
+    }
+}
+
+@media (max-width:768px) {
+    .shop__slider {
+        margin-left: 0px;
+    }
+
+    .shop__slider-desc {
+        margin-left: 15px;
+    }
+
+    .second-title {
+        margin-bottom: 20px;
+    }
+
+    .footer .button {
+        margin-left: 0px;
+    }
+
+    .slider2__slide-description {
+        margin-left: 15px;
+    }
+
+    .sleep .sleep__slider::after {
+        width: 230px;
+    }
+
+    .slider2__slide-location {
+        right: 15px;
+    }
+
+    .slider2__slide-airline .subtitle,
+    .slider2__slide-airline .second-title {
+        margin-left: 15px
+    }
+}
+
+@media (max-width:480px) {
+    .shop_slider-item {
+        flex-direction: column;
+    }
+
+    .shop__slider-desc {
+        margin-top: 25px;
+    }
+
+    .shop__slider .second-title {
+        margin-bottom: 17px;
+    }
+
+    .shop__slider-rating,
+    .shop__slider-price {
+        align-self: center;
+    }
+
+    .h2 {
+        margin-left: 15px;
+    }
+
+    .shop__slider-image {
+        padding-bottom: 145px;
+    }
+
+    .shop__slider-desc .button {
+        position: absolute;
+        bottom: 17px;
+        left: 25%;
+    }
+
+    .extras__items {
+        flex-direction: column;
+    }
+
+    .shop__slider-img {
+        margin-left: 15px;
+    }
+
+    .shop__slider-price {
+        margin-bottom: 15px;
+    }
+
+    .sleep__wrapper::after {
+        display: none;
+    }
+
+    .description__item {
+        flex: 1 1 50%;
+    }
+
+    .sleep .sleep__slider::before {
+        display: none;
+    }
+
+    .sleep .sleep__slider::after {
+        display: none;
+    }
+
+    .sleep__wrapper::before {
+        display: none;
+    }
+
+    .slider2__slide-location {
+        top: 0px;
+    }
+
+    .slider2__slide-img img {
+        width: 100%;
+    }
+
+    .slider2__arrows {
+        top: 245px;
+    }
+
+    .slider2__slide-wraper {
+        margin-top: 0px;
+    }
+
+    .slider2__slide-airline {
+        margin-bottom: 15px;
+    }
+
+    .slider2::after {
+        display: none;
+    }
+    .travel .slider2__slide-img::after{
+        bottom: 20px;
+    }
+}

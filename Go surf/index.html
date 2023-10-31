@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/icon-fonts.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="content">
+        <header class="header flex">
+            <div class="header__logo">
+                Go - surf
+            </div>
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <div class="header__fix" id="header__fix">
+                <nav class="header__menu menu" id="menu">
+                    <ul class="menu__wrapper">
+                        <li class="menu__item">
+                            <a href="" class="menu__link flex">
+                                <img src="./ico/surf.svg" width="58px" height="45px">
+                                <span>Surf</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link flex">
+                                <img src="./ico/travel.svg" width="58px" height="45px">
+                                <span>Travel</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link flex">
+                                <img src="./ico/camp.svg" width="58px" height="45px">
+                                <span>Sleep</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link flex">
+                                <img src="./ico/surfboard.svg" width="58px" height="45px">
+                                <span>Shop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <a href="#"><img src="./ico/Search.svg" alt="Search"></a>
+                </div>
+                <div class="header__date date">
+                    <div class="date__day">
+                        <script type="text/javascript">
+                            const date = new Date();
+                            document.write(date.getDate());
+                        </script>
+                    </div>
+                    <div class="date__month">
+                        <script type="text/javascript">
+                            document.write(date.getMonth() + 1 + ' | ' + date.getFullYear());
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="intro__wrapper">
+                <div class="intro__slider slider">
+                    <div class="slider__arrow flex">
+                        <div class="slider__arrow-prev">
+                            <img src="/ico/Shape.svg" alt="Slider arrow previous">
+                        </div>
+                        <div class="slider__arrow-next">
+                            <img src="/ico/Shape-r.svg" alt="Slider arrow next">
+                        </div>
+                    </div>
+                    <div class=" slider__pagination pagination ">
+                        <div class="pagination__wrapper flex"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="slider__item slide swiper-slide">
+                            <div class="slide__img">
+                                <img src="/ico/Map.svg" alt="West Shore">
+                            </div>
+                            <div class="slide__content">
+                                <div class="slide__subtitle subtitle">
+                                    Surf
+                                </div>
+                                <div class="slide__title">
+                                    North Shore
+                                </div>
+                                <div class="subtitle">
+                                    Condition
+                                </div>
+                                <div class="slide__second-title second-title">
+                                    Radical
+                                </div>
+                                <div class="slide__button">
+                                    <a href="#" class="slide__link"><img src="/ico/Shape-r.svg" alt="Read More"
+                                            title="Read More"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item slide swiper-slide">
+                            <div class="slide__img">
+                                <img src="/ico/Map.svg" alt="West Shore">
+                            </div>
+                            <div class="slide__content">
+                                <div class="subtitle">
+                                    Surf
+                                </div>
+                                <div class="slide__title">
+                                    South Shore
+                                </div>
+                                <div class="subtitle">
+                                    Condition
+                                </div>
+                                <div class="second-title">
+                                    beginner
+                                </div>
+                                <div class="slide__button">
+                                    <a href="#" class="slide__link"><img src="/ico/Shape-r.svg" alt="Read More"
+                                            title="Read More"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item slide swiper-slide">
+                            <div class="slide__img">
+                                <img src="/ico/Map.svg" alt="West Shore">
+                            </div>
+                            <div class="slide__content">
+                                <div class="subtitle">
+                                    Surf33
+                                </div>
+                                <div class="slide__title">
+                                    West Shore
+                                </div>
+                                <div class="subtitle">
+                                    Condition
+                                </div>
+                                <div class="second-title">
+                                    Radical
+                                </div>
+                                <div class="slide__button">
+                                    <a href="#" class="slide__link"><img src="/ico/Shape-r.svg" alt="Read More"
+                                            title="Read More"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="surf">
+            <div class="surf__wrapper">
+                <div class="surf__title h2">
+                    <h2>Surf</h2>
+                </div>
+                <div class="surf__location">
+                    <div class="subtitle">
+                        Current location
+                    </div>
+                    <div class="second-title">
+                        California | USA
+                    </div>
+                </div>
+                <div class="surf__map-wrapper flex">
+                    <div class="surf__map map">
+                        <svg viewBox="0 0 1248 635">
+                            <path data-id="point1" class="map__item" d="M 1149 525
+                            C 1155.63 525 1161 519.627 1161 513
+                            C 1161 506.373 1155.63 501 1149 501
+                            C 1142.37 501 1137 506.373 1137 513
+                            C 1137 519.627 1142.37 525 1149 525
+                            Z" hover="" />
+                            <path data-id="point2" class="map__item" d="M 858 419
+                            C 864.627 419 870 413.627 870 407
+                            C 870 400.373 864.627 395 858 395
+                            C 851.373 395 846 400.373 846 407
+                            C 846 413.627 851.373 419 858 419
+                            Z" />
+                            <path data-id="point3" class="map__item" d="M 697 579
+                            C 703.627 579 709 573.627 709 567
+                            C 709 560.373 703.627 555 697 555
+                            C 690.373 555 685 560.373 685 567
+                            C 685 573.627 690.373 579 697 579
+                            Z" />
+                            <path data-id="point4" class="map__item" d="M 590 236
+                            C 596.627 236 602 230.627 602 224
+                            C 602 217.373 596.627 212 590 212
+                            C 583.373 212 578 217.373 578 224
+                            C 578 230.627 583.373 236 590 236
+                            Z" />
+                            <path data-id="point5" class="map__item" d="M 473 525
+                            C 479.627 525 485 519.627 485 513
+                            C 485 506.373 479.627 501 473 501
+                            C 466.373 501 461 506.373 461 513
+                            C 461 519.627 466.373 525 473 525
+                            Z" />
+                            <path data-id="point6" class="map__item" d="M 398 342
+                            C 404.627 342 410 336.627 410 330
+                            C 410 323.373 404.627 318 398 318
+                            C 391.373 318 386 323.373 386 330
+                            C 386 336.627 391.373 342 398 342
+                            Z" />
+                            <path data-id="point7" class="map__item" d="M 196 314
+                            C 202.627 314 208 308.627 208 302
+                            C 208 295.373 202.627 290 196 290
+                            C 189.373 290 184 295.373 184 302
+                            C 184 308.627 189.373 314 196 314
+                            Z" />
+                            <path data-id="point8" class="map__item" d="M 47 354
+                            C 53.6274 354 59 348.627 59 342
+                            C 59 335.373 53.6274 330 47 330
+                            C 40.3726 330 35 335.373 35 342
+                            C 35 348.627 40.3726 354 47 354
+                            Z" />
+                        </svg>
+                        <div class="radius radius1">
+                            <div class="map__item-description point" id="point1">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius2">
+                            <div class="map__item-description point" id="point2">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius3">
+                            <div class="map__item-description point" id="point3">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius4">
+                            <div class="map__item-description point" id="point4">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius5">
+                            <div class="map__item-description point" id="point5">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius6">
+                            <div class="map__item-description point" id="point6">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius7">
+                            <div class="map__item-description point" id="point7">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radius radius8">
+                            <div class="map__item-description point" id="point8">
+                                <div class="point__wrapper flex">
+                                    <div class="point__title">
+                                        Airlie Beach
+                                    </div>
+                                    <div class="point__country">
+                                        Australia
+                                    </div>
+                                    <div class="point__description flex">
+                                        <div class="poin__item">
+                                            <img src="./ico/wave.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Water.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="poin__item">
+                                            <img src="./ico/Wind.svg" alt="Wave height">
+                                            <div class="poin__item-height">9 - 13</div>
+                                            <div class="poin__item-info">Surf (FT)</div>
+                                        </div>
+                                        <div class="surf__coordinates">
+                                            <div class="coordinates">
+                                                34.0501 N -118.2446 W
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./ico/World Map Dots.svg" alt="Surf spots map">
+                    </div>
+                </div>
+                <div class="surf__slider">
+                    <div class="surf__arrow flex">
+                        <div class="surf__arrow-prev">
+                            <img src="/ico/Shape.svg" alt="Slider arrow previous">
+                        </div>
+                        <div class="surf__arrow-next">
+                            <img src="/ico/Shape-r.svg" alt="Slider arrow next">
+                        </div>
+                    </div>
+                    <div class="surf__slider-items SurfSlider swiper-wrapper flex">
+                        <div class="SurfSlider__item swiper-slide">
+
+                            <div class=" SurfSlider__title">
+                                Malibu Beach
+                            </div>
+                            <div class="SurfSlider__location">
+                                California | USA
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="North Shore Spot">
+                            </div>
+                        </div>
+
+                        <div class="SurfSlider__item swiper-slide">
+
+                            <div class="SurfSlider__title">
+                                Airlie Beach
+                            </div>
+                            <div class="SurfSlider__location">
+                                Queensland | Australia
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/South Shore.png" alt="South Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+
+                            <div class="SurfSlider__title">
+                                Cloud Nine
+                            </div>
+                            <div class="SurfSlider__location">
+                                Siargao | Philippines
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/West Shore.png" alt="West Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/East Shore.png" alt="East Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="East Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="East Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="East Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="East Shore Spot">
+                            </div>
+                        </div>
+                        <div class="SurfSlider__item swiper-slide">
+                            <div class="SurfSlider__title">
+                                Vieux Boucau
+                            </div>
+                            <div class="SurfSlider__location">
+                                Hossegor | France
+                            </div>
+                            <div class="SurfSlider__button">
+                                <a href="#">View <span>Surf</span></a>
+                            </div>
+                            <div class="SurfSlider__img">
+                                <img src="./img/North Shore.jpg" alt="East Shore Spot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="travel">
+            <div class="travel__wrapper">
+                <div class="travel__title h2">
+                    <h2>Travel</h2>
+                </div>
+                <div class="slider2__arrows surf__arrow flex">
+                    <div class="travel slider2__prev _arrow-prev">
+                        <img src="/ico/Shape.svg" alt="Slider arrow previous">
+                    </div>
+                    <div class="travel slider2__next _arrow-next">
+                        <img src="/ico/Shape-r.svg" alt="Slider arrow next">
+                    </div>
+                </div>
+                <div class="travel__slider slider2">
+                    <div class="slider2__items swiper-wrapper">
+                        <div class="slider2__slide swiper-slide">
+                            <div class=" slider2__slide-wraper">
+                                <div class="travel slider2__slide-img">
+                                    <img src="./img/Travel Image.png" alt="">
+                                </div>
+                                <div class="slider2__slide-location">
+                                    <div class="subtitle">
+                                        Shore
+                                    </div>
+                                    <div class="second-title">
+                                        Airlie Beach | Australia
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-airline">
+                                    <div class="subtitle">
+                                        Airline
+                                    </div>
+                                    <div class="second-title">
+                                        Virgin Australia
+                                        <img src="./ico/virgin_logo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-description description flex">
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Destination
+                                        </div>
+                                        <div class="description__data">
+                                            Queensland Australia
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Distance
+                                        </div>
+                                        <div class="description__data">
+                                            7,065 Miles
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Travel Time
+                                        </div>
+                                        <div class="description__data">
+                                            23 Hours 5 Minutes
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Pricing
+                                        </div>
+                                        <div class="description__data">
+                                            $1,976 USD
+                                            <span>Round Trip</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider2__slide swiper-slide">
+                            <div class=" slider2__slide-wraper">
+                                <div class="travel slider2__slide-img">
+                                    <img src="./img/Travel Image.png" alt="">
+                                </div>
+                                <div class="slider2__slide-location">
+                                    <div class="subtitle">
+                                        Shore
+                                    </div>
+                                    <div class="second-title">
+                                        Airlie Beach | Australia
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-airline">
+                                    <div class="subtitle">
+                                        Airline
+                                    </div>
+                                    <div class="second-title">
+                                        Virgin Australia
+                                        <img src="./ico/virgin_logo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-description description flex">
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Destination
+                                        </div>
+                                        <div class="description__data">
+                                            Queensland Australia
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Distance
+                                        </div>
+                                        <div class="description__data">
+                                            7,065 Miles
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Travel Time
+                                        </div>
+                                        <div class="description__data">
+                                            23 Hours 5 Minutes
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Pricing
+                                        </div>
+                                        <div class="description__data">
+                                            $1,976 USD
+                                            <span>Round Trip</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider2__button button">
+                    <div class="button__wrapper">
+                        <a href="#">
+                            book<span>flight</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sleep">
+            <div class="sleep__wrapper">
+                <div class="sleep__title h2">
+                    <h2>Sleep</h2>
+                </div>
+                <div class="slider2__arrows surf__arrow flex">
+                    <div class="sleep slider2__prev _arrow-prev">
+                        <img src="/ico/Shape.svg" alt="Slider arrow previous">
+                    </div>
+                    <div class="sleep slider2__next _arrow-next">
+                        <img src="/ico/Shape-r.svg" alt="Slider arrow next">
+                    </div>
+                </div>
+                <div class="sleep__slider slider2">
+                    <div class="slider2__items swiper-wrapper">
+                        <div class="slider2__slide swiper-slide">
+                            <div class=" slider2__slide-wraper">
+                                <div class="slider2__slide-img">
+                                    <img src="./img/Sleep Image.png" alt="">
+                                </div>
+                                <div class="slider2__slide-location">
+                                    <div class="subtitle">
+                                        Resorts
+                                    </div>
+                                    <div class="second-title">
+                                        Auberge | Australia
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-airline">
+                                    <div class="subtitle">
+                                        Rating
+                                    </div>
+                                    <div class="second-title">
+                                        Excellent
+                                        <img src="./img/Star.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-description description flex">
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Resort
+                                        </div>
+                                        <div class="description__data">
+                                            Auberge Australia
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            # of Nights
+                                        </div>
+                                        <div class="description__data _nights">
+                                            <div class="nights">1</div> Nights
+                                            <div class="description__data-quantity _quantity flex">
+                                                <button class="minus"></button>
+                                                <button class="pluse"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            # of Guests
+                                        </div>
+                                        <div class="description__data">
+                                            4 Guests
+                                            <div class="description__data-quantity _quantity flex">
+                                                <button class="minus"></button>
+                                                <button class="pluse"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Pricing
+                                        </div>
+                                        <div class="description__data">
+                                            $349 USD
+                                            <span>Per Night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider2__slide swiper-slide">
+                            <div class=" slider2__slide-wraper">
+                                <div class="slider2__slide-img">
+                                    <img src="./img/Sleep Image.png" alt="">
+                                </div>
+                                <div class="slider2__slide-location">
+                                    <div class="subtitle">
+                                        Resorts
+                                    </div>
+                                    <div class="second-title">
+                                        Auberge | Australia
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-airline">
+                                    <div class="subtitle">
+                                        Rating
+                                    </div>
+                                    <div class="second-title">
+                                        Excellent
+                                        <img src="./img/Star.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider2__slide-description description flex">
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Resort
+                                        </div>
+                                        <div class="description__data">
+                                            Auberge Australia
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            # of Nights
+                                        </div>
+                                        <div class="description__data _nights">
+                                            <div class="nights">2</div> Nights
+                                            <div class="description__data-quantity _quantity flex">
+                                                <button class="minus"></button>
+                                                <button class="pluse"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            # of Guests
+                                        </div>
+                                        <div class="description__data">
+                                            4 Guests
+                                            <div class="description__data-quantity _quantity flex">
+                                                <button class="minus"></button>
+                                                <button class="pluse"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__item flex">
+                                        <div class="description__title">
+                                            Pricing
+                                        </div>
+                                        <div class="description__data">
+                                            $349 USD
+                                            <span>Per Night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider2__button button">
+                    <div class="button__wrapper">
+                        <a href="#">
+                            book<span>stay</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="shop__wrapper">
+                <div class=" h2">
+                    <h2>Shop</h2>
+                </div>
+                <div class="shop__slider">
+                    <div class="shop__arrow slider2__arrows flex">
+                        <div class="shop slider2__prev _arrow-prev">
+                            <img src="/ico/Shape.svg" alt="Slider arrow previous">
+                        </div>
+                        <div class="shop slider2__next _arrow-next">
+                            <img src="/ico/Shape-r.svg" alt="Slider arrow next">
+                        </div>
+                    </div>
+                    <div class="shop__slider-wrapper swiper-wrapper">
+                        <div class=" shop_slider-item flex swiper-slide">
+                            <div class="shop__slider-desc flex">
+                                <div class="subtitle">
+                                    Style
+                                </div>
+                                <div class="second-title">
+                                    North Nugget TT Surfboard
+                                </div>
+                                <div class="shop__slider-rating">
+                                    <img src="./img/Star.png" alt="">
+                                </div>
+                                <div class="shop__slider-price">
+                                    $799<sup>99</sup>
+                                </div>
+                                <div class="slider2__button button">
+                                    <div class="button__wrapper">
+                                        <a href="#">
+                                            drop<span>in</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop__slider-image flex">
+                                <div class="shop__slider-img">
+                                    <img src="./img/Surfboard.png" alt="North Nugget TT Surfboard">
+                                </div>
+                                <div class="shop__slider-extras extras">
+                                    <div class="extras__title">
+                                        Extras
+                                    </div>
+                                    <div class="extras__items flex">
+                                        <div class="extras__item">
+                                            <div class="extras__item-img">
+                                                <img src="./img/Wax.png" alt="Wax">
+                                            </div>
+                                            <div class="extras__item-title">
+                                                Sex Wax
+                                            </div>
+                                            <div class="extras__item-price">
+                                                $24.99
+                                            </div>
+                                        </div>
+                                        <div class="extras__item">
+                                            <div class="extras__item-img">
+                                                <img src="./img/Bracelet.png" alt="Wax">
+                                            </div>
+                                            <div class="extras__item-title">
+                                                Pura Vida
+                                            </div>
+                                            <div class="extras__item-price">
+                                                $27.99
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_slider-item flex swiper-slide">
+                            <div class="shop__slider-desc flex">
+                                <div class="subtitle">
+                                    Style
+                                </div>
+                                <div class="second-title">
+                                    North Nugget TT Surfboard
+                                </div>
+                                <div class="shop__slider-rating">
+                                    <img src="./img/Star.png" alt="">
+                                </div>
+                                <div class="shop__slider-price">
+                                    $799<sup>99</sup>
+                                </div>
+                                <div class="slider2__button button">
+                                    <div class="button__wrapper">
+                                        <a href="#">
+                                            drop<span>in</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop__slider-image flex">
+                                <div class="shop__slider-img">
+                                    <img src="./img/Surfboard.png" alt="North Nugget TT Surfboard">
+                                </div>
+                                <div class="shop__slider-extras extras">
+                                    <div class="extras__title">
+                                        Extras
+                                    </div>
+                                    <div class="extras__items flex">
+                                        <div class="extras__item">
+                                            <div class="extras__item-img">
+                                                <img src="./img/Wax.png" alt="Wax">
+                                            </div>
+                                            <div class="extras__item-title">
+                                                Sex Wax
+                                            </div>
+                                            <div class="extras__item-price">
+                                                $24.99
+                                            </div>
+                                        </div>
+                                        <div class="extras__item">
+                                            <div class="extras__item-img">
+                                                <img src="./img/Bracelet.png" alt="Wax">
+                                            </div>
+                                            <div class="extras__item-title">
+                                                Pura Vida
+                                            </div>
+                                            <div class="extras__item-price">
+                                                $27.99
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="button">
+                <div class="button__wrapper">
+                    <a href="#">
+                        go<span>surf</span>
+                    </a>
+                </div>
+                <div class="footer__copy">
+                    © Go-Surf 2018. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/map.js"></script>
+        <script src="./js/swiper.js"></script>
+        <script src="./js/script.js"></script>
+    </main>
+</body>
+
+</html>
