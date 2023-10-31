@@ -539,7 +539,6 @@ a {
 
 .SurfSlider__item {
     position: relative;
-    width: 400px !important;
     margin-right: -40px;
 }
 
@@ -652,10 +651,6 @@ a {
 }
 
 @media (max-width:1024px) {
-    .SurfSlider__item {
-        width: 300px !important;
-    }
-
     .SurfSlider__title {
         margin-top: 22px;
     }
@@ -1297,4 +1292,40 @@ a {
     .shop__wrapper::before {
         display: none;
     }
+    .description__data{
+        font-size: 22px;
+    }
+    .description__title{
+        letter-spacing: 3px;
+    }
+    .h2{
+        margin-top: 30px;
+    }
+    .subtitle::before{
+        width: 60px;
+    }
+    .subtitle {
+        font-size: 18px;
+        letter-spacing:3px;
+    }
+    .travel .slider2__slide-img::after{
+        display: none;
+    }
+    .button__wrapper {
+        font-size: 30px;
+    }
+    .button__wrapper span{
+        padding: 10px;
+    }
+    .button__wrapper span::before{
+        top: 28px;
+        width:15px;
+    }
+    .shop{
+        margin-bottom: 100px;
+    }
+    .shop__arrow{
+        margin-right: 15px;
+    }
+
 }

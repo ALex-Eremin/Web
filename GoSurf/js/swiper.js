@@ -30,24 +30,17 @@ new Swiper('.surf__slider', {
         nextEl: '.surf__arrow-next',
         prevEl: '.surf__arrow-prev',
     },
-    // loop: true,
-    // pagination: {
-    //     el: '.pagination__wrapper',
-    //     type: 'bullets',
-    //     bulletClass: 'pagination__item',
-    //     bulletActiveClass: '__active',
-    //     clickable: 'true',
-    //     renderBullet:
-    //         function (index, className) {
-    //             let title = ['North Shore', 'South Shore', 'West Shore ', 'East Shore'];
-    //             return ' <div class="' + className + '"> <div class="pagination__content flex"><div class="pagination__number"> 0' + (index + 1) + '</div><div class="pagination__title">' + title[index] + '</div></div></div>';
-    //         }
-    // },
-
-    slidesPerView: 4,
-
-
-
+    breakpoints: {
+        769: {
+            slidesPerView: 3.8,
+        },
+        480: {
+            slidesPerView: 2.3,
+        },
+        200: {
+            slidesPerView: 1.2,
+        },
+    }
 });
 
 
