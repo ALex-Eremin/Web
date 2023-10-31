@@ -1286,7 +1286,15 @@ a {
     .slider2::after {
         display: none;
     }
-    .travel .slider2__slide-img::after{
+
+    .travel .slider2__slide-img::after {
         bottom: 20px;
+    }
+
+    .surf__wrapper::after,
+    .surf__wrapper::before,
+    .intro::before,
+    .shop__wrapper::before {
+        display: none;
     }
 }
