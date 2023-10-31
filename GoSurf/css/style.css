@@ -1322,6 +1322,7 @@ a {
 
     .button__wrapper span {
         padding: 10px;
+        text-wrap: nowrap;
     }
 
     .button__wrapper span::before {
