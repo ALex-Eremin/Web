@@ -1221,7 +1221,7 @@ a {
     .shop__slider-desc .button {
         position: absolute;
         bottom: 17px;
-        left: 25%;
+        left: 20%;
     }
 
     .extras__items {
@@ -1290,39 +1290,50 @@ a {
     .shop__wrapper::before {
         display: none;
     }
-    .description__data{
+
+    .description__data {
         font-size: 22px;
     }
-    .description__title{
+
+    .description__title {
         letter-spacing: 3px;
     }
-    .h2{
+
+    .h2 {
         margin-top: 30px;
     }
-    .subtitle::before{
+
+    .subtitle::before {
         width: 60px;
     }
+
     .subtitle {
         font-size: 18px;
-        letter-spacing:3px;
+        letter-spacing: 3px;
     }
-    .travel .slider2__slide-img::after{
+
+    .travel .slider2__slide-img::after {
         display: none;
     }
+
     .button__wrapper {
         font-size: 30px;
     }
-    .button__wrapper span{
+
+    .button__wrapper span {
         padding: 10px;
     }
-    .button__wrapper span::before{
+
+    .button__wrapper span::before {
         top: 28px;
-        width:15px;
+        width: 15px;
     }
-    .shop{
+
+    .shop {
         margin-bottom: 100px;
     }
-    .shop__arrow{
+
+    .shop__arrow {
         margin-right: 15px;
     }
 
